@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Knit Pattern Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="panel">
+  <h2>Knit Generator</h2>
+
+  <label>Stitch Gauge</label>
+  <input id="stsGauge" type="number">
+
+  <label>Row Gauge</label>
+  <input id="rowGauge" type="number">
+
+  <label>Body Width</label>
+  <input id="bodyWidth" type="number">
+
+  <label>Body Height</label>
+  <input id="bodyHeight" type="number">
+
+  <label>Ease</label>
+  <input id="ease" type="number" value="0">
+
+  <label>Ribbing</label>
+  <input id="ribbing" type="number" value="0">
+
+  <button onclick="generate()">Generate</button>
+</div>
+
+<div id="output"></div>
+
+<script src="letters/font.js"></script>
+
+<script src="knit/grid.js"></script>
+<script src="knit/pattern.js"></script>
+<script src="knit/neckline.js"></script>
+<script src="knit/sleeve.js"></script>
+<script src="knit/text.js"></script>
+<script src="knit/render.js"></script>
+
+<script src="app.js"></script>
+
+</body>
+</html>
